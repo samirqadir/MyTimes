@@ -1,0 +1,40 @@
+/* header style definitions */
+.header {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: MediumAquamarine;
+}
+
+.logo span {
+  margin-left: 10px;
+}
+
+.header nav {
+  display: inline-block;
+  color: black;
+}
+
+.header nav a {
+  margin-right: 20px;
+  color: black;
+}
+
+.main {
+  display: flex;
+  border: 1px solid black;
+}
+
+div.main >> * {
+  border: 1px solid black;
+}
