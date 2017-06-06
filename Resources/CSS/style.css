@@ -1,13 +1,18 @@
 /* header style definitions */
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 10px;
+  padding: 10px 0px;
   border-bottom: 1px solid black;
+  background-color: white;
+  z-index: 10;
 }
 
 .logo {
@@ -20,21 +25,114 @@
   margin-left: 10px;
 }
 
-.header nav {
-  display: inline-block;
-  color: black;
-}
-
 .header nav a {
   margin-right: 20px;
   color: black;
 }
 
-.main {
+/* column styule definitions */
+.column {
   display: flex;
-  border: 1px solid black;
+  justify-content: space-between;
+  padding-top: 90px;
 }
 
-div.main >> * {
-  border: 1px solid black;
+/* style dfefinitions for image containers */
+.image {
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+}
+
+.leader.image {
+  font-size: 40px;
+}
+
+.center span {
+  text-align: center;
+}
+
+.large .leader.image {
+  background-image: url("../img-story-main.png");
+}
+
+.large .third {
+  background-image: url("../img-story-2.png");
+  justify-content: center;
+}
+
+.large .fourth {
+  background-image: url("../img-story-3.png");
+  justify-content: center;
+}
+
+.medium .second {
+  background-image: url("../img-story-1.png");
+  justify-content: center;
+}
+
+/* style for text containers */
+.text {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+/* column width and flex layout */
+.large {
+  width: 630px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.stories {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.stories > * {
+  width: 300px;
+  height: 300px;
+}
+
+.medium {
+  width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.small {
+  width: 240px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.small h2 {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+}
+
+.newsbites {
+  display: flex;
+  flex-direction: column;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+.newsbites > * {
+  padding: 10px 0;
+  margin: 0px;
+  border-bottom: 1px solid black;
 }
