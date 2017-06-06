@@ -49,6 +49,7 @@
   font-size: 30px;
   color: white;
   height: 300px;
+  align-items: center;
 }
 
 .leader.image {
@@ -61,21 +62,19 @@
 
 .large .leader.image {
   background-image: url("../img-story-main.png");
+  padding-left: 20px;
 }
 
 .large .third {
   background-image: url("../img-story-2.png");
-  justify-content: center;
 }
 
 .large .fourth {
   background-image: url("../img-story-3.png");
-  justify-content: center;
 }
 
 .medium .second {
   background-image: url("../img-story-1.png");
-  justify-content: center;
 }
 
 /* style for text containers */
